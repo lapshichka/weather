@@ -15,9 +15,12 @@ body {
 [class*="__container"] {
   max-width: 1350px;
   margin: 0 auto;
-  padding: 65px 15px;
+  padding: 0 15px;
 }
 /* ------------------------------------------------ */
+.header__container {
+  padding: 63px 15px 50px 15px;
+}
 .header__content {
   display: flex;
 }
@@ -95,15 +98,18 @@ input:checked + .slider::before {
   cursor: pointer;
 }
 .searchbar input {
+  border-radius: 40px;
   width: 100%;
   background: #d9d9d9;
   padding: 15px;
 }
-.searchbar {
-  width: 100%;
+input::placeholder {
   color: #292929;
   font-size: 18px;
-  padding: 19px 15px 19px 102px;
+}
+.searchbar {
+  width: 100%;
+  padding: 17px 15px 17px 102px;
 }
 
 /* ------------------------------------------------ */
@@ -146,6 +152,7 @@ input:checked + .slider::before {
   background: #d9d9d9;
   margin-right: 5%;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
 }
 .weather-details {
   width: 780px;
@@ -153,12 +160,14 @@ input:checked + .slider::before {
   border-radius: 30px;
   background: #d9d9d9;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
 }
 /* ------------------------------------------------ */
 .location {
   color: #292929;
   font-size: 36px;
   font-weight: 700;
+  margin: 53px 0 29px 0;
 }
 .time {
   color: #292929;
@@ -166,14 +175,17 @@ input:checked + .slider::before {
   font-weight: 700;
 }
 .day {
+  margin: 0;
   color: #292929;
   font-size: 20px;
   font-weight: 400;
+  position: absolute;
+  bottom: 48px;
 }
 /* ------------------------------------------------ */
 .weather-details {
   display: flex;
-  padding: 0 15px;
+  padding: 20px 20px;
 }
 .degrees {
   font-size: 80px;
@@ -191,13 +203,31 @@ input:checked + .slider::before {
   color: #292929;
   font-size: 20px;
   font-weight: 600;
+  position: absolute;
+  top: 113px;
 }
 .feels span {
   color: #292929;
   font-size: 32px;
   font-weight: 700;
+  vertical-align: middle;
 }
 /* ------------------------------------------------ */
+.sun__content {
+  margin-top: 47px;
+}
+.sunrise {
+  width: 48px;
+  height: 48px;
+  background: url(../images/sunrise.png), 50% / cover no-repeat;
+  background-size: contain;
+}
+.sunset {
+  width: 48px;
+  height: 48px;
+  background: url(../images/sunset.png), 50% / cover no-repeat;
+  background-size: contain;
+}
 .sun__title {
   color: #292929;
   font-size: 20px;
@@ -209,9 +239,9 @@ input:checked + .slider::before {
 }
 /* ------------------------------------------------ */
 .weather-type__image {
-  width: 270px;
-  height: 270px;
-  background: url(../images/sun.png), lightgray 50% / cover no-repeat;
+  width: 240px;
+  height: 240px;
+  background: url(../images/sun.png), 50% / cover no-repeat;
   background-size: contain;
 }
 .weather-type__text {
@@ -240,4 +270,3 @@ input:checked + .slider::before {
 .other-block {
   display: flex;
 }
-
