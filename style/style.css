@@ -153,6 +153,9 @@ input::placeholder {
   font-weight: 800;
 }
 /* ------------------------------------------------ */
+.main {
+  padding: 50px 0;
+}
 .section-one__content {
   display: flex;
 }
@@ -445,6 +448,9 @@ input::placeholder {
     max-width: 750px;
   }
 
+  .main {
+    padding: 30px 0;
+  }
   .section-one__content {
     display: block;
   }
@@ -485,6 +491,10 @@ input::placeholder {
 @media (max-width: 767.98px) {
   [class*="__container"] {
     max-width: none;
+  }
+
+  .main {
+    padding: 30px 0;
   }
 
   .header__switch {
