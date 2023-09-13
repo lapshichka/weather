@@ -5,7 +5,7 @@
 html,
 body {
   width: 100%;
-  height: 100%;
+  height: max-content;
   background: linear-gradient(113deg, #fff 0.28%, #292929 178.65%);
   color: #000;
   font-family: Poppins;
@@ -99,7 +99,7 @@ input:checked + .slider::before {
   transform: scale(1.05);
 }
 .search-btn {
-  background-image: url(../weather/images/searchicon.png);
+  background-image: url(../images/searchicon.png);
   background-size: 40px;
   width: 40px;
   height: 46px;
@@ -122,7 +122,9 @@ input::placeholder {
   width: 100%;
   padding: 17px 15px 17px 102px;
 }
-
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
 /* ------------------------------------------------ */
 .header__button {
   margin-left: 80px;
