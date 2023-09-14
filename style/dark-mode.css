@@ -254,7 +254,6 @@ input[type="search"]::-webkit-search-cancel-button {
   background-repeat: no-repeat;
   background-position-y: center;
   padding: 5px 58px;
-  border-radius: 30px;
 }
 .sunset {
   background-image: url(../images/sunsetWhite.png);
