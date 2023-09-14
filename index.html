@@ -5,14 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/style.css" id="theme"/>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
           <div class="header__content">
-            <div class="header__switch">
+            <div class="header__switch" id="switchMode">
               <label class="switch">
                 <input type="checkbox" />
                 <span class="slider round"></span>
@@ -77,34 +77,26 @@
                 <div class="weather-details-other">
                   <div class="other-block">
                     <div class="humidity">
-                      <div class="other-block__image">
-                        <img src="./images/humidity.png" alt="" />
-                      </div>
+                      <div class="other-block__image image-humidity"></div>
                       <div class="other-block__value">41%</div>
                       <div class="other-block__text">Humidity</div>
                     </div>
 
                     <div class="wind-speed">
-                      <div class="other-block__image">
-                        <img src="./images/wind.png" alt="" />
-                      </div>
+                      <div class="other-block__image image-wind-speed"></div>
                       <div class="other-block__value">2km/h</div>
                       <div class="other-block__text">Wind Speed</div>
                     </div>
                   </div>
                   <div class="other-block">
                     <div class="pressure">
-                      <div class="other-block__image">
-                        <img src="./images/pressure.png" alt="" />
-                      </div>
+                      <div class="other-block__image image-pressure"></div>
                       <div class="other-block__value">997hPa</div>
                       <div class="other-block__text">Pressure</div>
                     </div>
 
                     <div class="uv">
-                      <div class="other-block__image">
-                        <img src="./images/uv.png" alt="" />
-                      </div>
+                      <div class="other-block__image image-uv"></div>
                       <div class="other-block__value">8</div>
                       <div class="other-block__text">UV</div>
                     </div>
@@ -118,37 +110,56 @@
         <section class="section-two">
           <div class="section-two__container">
             <div class="section-two__content">
-
               <div class="forecast">
                 <h2 class="forecast__title">5 Days Forecast:</h2>
 
                 <ul class="forecast__list">
                   <li class="forecast-list__item">
-                    <img src="./images/clouds.png" alt="" class="forecast-list__image">
+                    <img
+                      src="./images/clouds.png"
+                      alt=""
+                      class="forecast-list__image"
+                    />
                     <div class="forecast-list__title">20°C</div>
                     <div class="list__text">Friday, 1 Sep</div>
                   </li>
 
                   <li class="forecast-list__item">
-                    <img src="./images/mist.png" alt="" class="forecast-list__image">
+                    <img
+                      src="./images/mist.png"
+                      alt=""
+                      class="forecast-list__image"
+                    />
                     <div class="forecast-list__title">22°C</div>
                     <div class="list__text">Saturday, 2 Sep</div>
                   </li>
 
                   <li class="forecast-list__item">
-                    <img src="./images/sun.png" alt="" class="forecast-list__image">
+                    <img
+                      src="./images/sun.png"
+                      alt=""
+                      class="forecast-list__image"
+                    />
                     <div class="forecast-list__title">27°C</div>
                     <div class="list__text">Sunday, 3 Sep</div>
                   </li>
 
                   <li class="forecast-list__item">
-                    <img src="./images/drizzle.png" alt="" class="forecast-list__image">
+                    <img
+                      src="./images/drizzle.png"
+                      alt=""
+                      class="forecast-list__image"
+                    />
                     <div class="forecast-list__title">18°C</div>
                     <div class="list__text">Monday, 4 Sep</div>
                   </li>
 
                   <li class="forecast-list__item">
-                    <img src="./images/rain.png" alt="" class="forecast-list__image">
+                    <img
+                      src="./images/rain.png"
+                      alt=""
+                      class="forecast-list__image"
+                    />
                     <div class="forecast-list__title">16°C</div>
                     <div class="list__text">Tuesday, 5 Sep</div>
                   </li>
@@ -161,41 +172,81 @@
                 <ul class="hourly-forecast__list">
                   <li class="hourly-forecast-list__item">
                     <div class="list__title">12:00</div>
-                    <img src="./images/sun.png" alt="погода" class="list-weather__image">
+                    <img
+                      src="./images/sun.png"
+                      alt="погода"
+                      class="list-weather__image"
+                    />
                     <div class="list__text">26°C</div>
-                    <img src="./images/navigation.png" alt="навигация" class="list-navigation__image">
+                    <img
+                      src="./images/navigation.png"
+                      alt="навигация"
+                      class="list-navigation__image"
+                    />
                     <div class="list__text">3km/h</div>
                   </li>
 
                   <li class="hourly-forecast-list__item">
                     <div class="list__title">15:00</div>
-                    <img src="./images/sun.png" alt="погода" class="list-weather__image">
+                    <img
+                      src="./images/sun.png"
+                      alt="погода"
+                      class="list-weather__image"
+                    />
                     <div class="list__text">27°C</div>
-                    <img src="./images/navigation.png" alt="навигация" class="list-navigation__image">
+                    <img
+                      src="./images/navigation.png"
+                      alt="навигация"
+                      class="list-navigation__image"
+                    />
                     <div class="list__text">2km/h</div>
                   </li>
 
                   <li class="hourly-forecast-list__item">
                     <div class="list__title">18:00</div>
-                    <img src="./images/clouds.png" alt="погода" class="list-weather__image">
+                    <img
+                      src="./images/clouds.png"
+                      alt="погода"
+                      class="list-weather__image"
+                    />
                     <div class="list__text">27°C</div>
-                    <img src="./images/navigation.png" alt="навигация" class="list-navigation__image">
+                    <img
+                      src="./images/navigation.png"
+                      alt="навигация"
+                      class="list-navigation__image"
+                    />
                     <div class="list__text">2km/h</div>
                   </li>
 
                   <li class="hourly-forecast-list__item list-item__night">
                     <div class="list__title">21:00</div>
-                    <img src="./images/clouds.png" alt="погода" class="list-weather__image">
+                    <img
+                      src="./images/clouds.png"
+                      alt="погода"
+                      class="list-weather__image"
+                    />
                     <div class="list__text">25°C</div>
-                    <img src="./images/navigation.png" alt="навигация" class="list-navigation__image">
+                    <img
+                      src="./images/navigation.png"
+                      alt="навигация"
+                      class="list-navigation__image"
+                    />
                     <div class="list__text">3km/h</div>
                   </li>
 
                   <li class="hourly-forecast-list__item list-item__night">
                     <div class="list__title">00:00</div>
-                    <img src="./images/sun.png" alt="погода" class="list-weather__image">
+                    <img
+                      src="./images/sun.png"
+                      alt="погода"
+                      class="list-weather__image"
+                    />
                     <div class="list__text">22°C</div>
-                    <img src="./images/navigation.png" alt="навигация" class="list-navigation__image">
+                    <img
+                      src="./images/navigation.png"
+                      alt="навигация"
+                      class="list-navigation__image"
+                    />
                     <div class="list__text">3km/h</div>
                   </li>
                 </ul>
